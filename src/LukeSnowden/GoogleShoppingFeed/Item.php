@@ -320,6 +320,15 @@ class Item
         $node = new Node('size');
         $this->nodes['size'] = $node->value($size)->_namespace($this->namespace)->addCdata();
     }
+    
+    /**
+     * @param $size system
+     */
+    public function size_system($value)
+    {
+        $node = new Node('size_system');
+        $this->nodes['size_system'] = $node->value($value)->_namespace($this->namespace)->addCdata();
+    }
 
     /**
      * @param $gender
